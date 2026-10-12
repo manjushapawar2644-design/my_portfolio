@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #b5d5e9, #b5d5e9);
+    color: #00040a;
+}
+
+/* Navbar */
+.navbar {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    background: rgb(16, 3, 46);
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.logo {
+    font-size: 24px;
+    color: #dadae2;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #d8d9dc;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #ebebf8;
+}
+
+/* Home */
+.home {
+    min-height: calc(100vh - 75px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    padding: 40px 8%;
+}
+
+.home-content {
+    max-width: 450px;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.home-content h1 span {
+    color: #01010c;
+}
+
+.home-content h3 {
+    font-size: 25px;
+    color: #010812;
+    margin-bottom: 12px;
+}
+
+.home-content p {
+    font-size: 18px;
+    color: #01060e;
+}
+.welcome {
+    color: #01010c;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 11px 22px;
+    background: #080539;
+    color: rgb(225, 225, 241);
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0e0957;
+    transform: translateY(-2px);
+}
+
+.home-image img {
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid white;
+
+    box-shadow:
+        0 0 20px #6366f1,
+        0 0 45px rgba(99, 102, 241, 0.6),
+        0 0 80px rgba(99, 102, 241, 0.3);
+
+    transition: 0.4s ease;
+}
+
+.home-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 0 5%;
+    ;
+    }
+
+    .navbar ul {
+        gap: 12px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .home-image img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .home-content h1 {
+        font-size: 35px;
+    }
+}
