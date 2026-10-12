@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Job Connect</title>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <!-- Logo -->
+    <div class="logo">
+        <div class="logo-icon"></div>
+
+        <div>
+            <h2>Job <span>Connect</span></h2>
+    
+        </div>
+    </div>
+
+
+    <!-- Right Side Navigation -->
+    <nav class="nav-menu">
+
+        <a href="index.html" >Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="login.html">Login</a>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="small-title">
+            YOUR CAREER &nbsp; • &nbsp; OUR PRIORITY
+        </p>
+
+        <h1>
+            Find Your Next
+            <span>Career Opportunity</span>
+        </h1>
+
+        <p class="description">
+            Connect with the right opportunities and
+            build your future with the right employers.
+        </p>
+
+        <button class="explore-btn" onclick="exploreJobs()">
+            Explore Latest Jobs
+            <span>→</span>
+        </button>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <img src="image/imge.jpeg.png" alt="Career Opportunity">
+
+    </div>
+
+</section>
+
+
+<!-- ================= WHY CHOOSE ================= -->
+
+<section class="why-section">
+
+    <p class="section-small">
+        WHY CHOOSE JOB CONNECT?
+    </p>
+
+    <h2>
+        Your Success, <span>Our Mission</span>
+    </h2>
+
+    <div class="line"></div>
+
+
+    <div class="features">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                💼
+            </div>
+
+            <h3>Wide Job Opportunities</h3>
+
+            <p>
+                Explore a diverse range of job openings
+                from top companies across various industries.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                👥
+            </div>
+
+            <h3>Trusted Employers</h3>
+
+            <p>
+                Connect with verified and reliable employers
+                who value your talent.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                📈
+            </div>
+
+            <h3>Career Growth</h3>
+
+            <p>
+                Get the right opportunities to enhance
+                your skills and advance your career.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🛡️
+            </div>
+
+            <h3>Safe & Secure</h3>
+
+            <p>
+                Your data and privacy are always
+                protected with us.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= JOBS ================= -->
+
+<section class="jobs-section" id="jobs">
+
+    <p class="section-small">
+        LATEST JOB OPENINGS
+    </p>
+
+    <div class="jobs-heading">
+
+        <div>
+            <h2>Popular Jobs This Week</h2>
+
+            <p>
+                Discover the latest job opportunities and
+                take the next step towards your dream career.
+            </p>
+        </div>
+
+        <a href="jobs.html">
+            View All Jobs →
+        </a>
+
+    </div>
+
+
+    <div class="job-grid">
+
+
+        <!-- JOB 1 -->
+
+        <div class="job-card">
+
+            <div class="company-row">
+                <div class="company-logo google">G</div>
+
+                <span>Featured</span>
+            </div>
+
+            <h3>Frontend Developer</h3>
+
+            <p class="company">Google</p>
+
+            <p>📍 Bengaluru, India</p>
+
+            <p>💼 Full-time</p>
+
+            <p>₹ 6 - 12 LPA</p>
+
+            <button onclick="applyJob('Frontend Developer')">
+                Apply Now
+            </button>
+
+        </div>
+
+
+        <!-- JOB 2 -->
+
+        <div class="job-card">
+
+            <div class="company-row">
+                <div class="company-logo microsoft">■</div>
+
+                <span>Featured</span>
+            </div>
+
+            <h3>Software Engineer</h3>
+
+            <p class="company">Microsoft</p>
+
+            <p>📍 Hyderabad, India</p>
+
+            <p>💼 Full-time</p>
+
+            <p>₹ 8 - 15 LPA</p>
+
+            <button onclick="applyJob('Software Engineer')">
+                Apply Now
+            </button>
+
+        </div>
+
+
+        <!-- JOB 3 -->
+
+        <div class="job-card">
+
+            <div class="company-row">
+                <div class="company-logo amazon">amazon</div>
+
+                <span>New</span>
+            </div>
+
+            <h3>Data Analyst</h3>
+
+            <p class="company">Amazon</p>
+
+            <p>📍 Pune, India</p>
+
+            <p>💼 Full-time</p>
+
+            <p>₹ 5 - 10 LPA</p>
+
+            <button onclick="applyJob('Data Analyst')">
+                Apply Now
+            </button>
+
+        </div>
+
+
+        <!-- JOB 4 -->
+
+        <div class="job-card">
+
+            <div class="company-row">
+                <div class="company-logo tcs">tcs</div>
+
+                <span>New</span>
+            </div>
+
+            <h3>System Engineer</h3>
+
+            <p class="company">TCS</p>
+
+            <p>📍 Mumbai, India</p>
+
+            <p>💼 Full-time</p>
+
+            <p>₹ 3 - 7 LPA</p>
+
+            <button onclick="applyJob('System Engineer')">
+                Apply Now
+            </button>
+
+        </div>
+
+
+        <!-- JOB 5 -->
+
+        <div class="job-card">
+
+            <div class="company-row">
+                <div class="company-logo infosys">Infosys</div>
+
+                <span>Featured</span>
+            </div>
+
+            <h3>Business Analyst</h3>
+
+            <p class="company">Infosys</p>
+
+            <p>📍 Bangalore, India</p>
+
+            <p>💼 Full-time</p>
+
+            <p>₹ 4 - 8 LPA</p>
+
+            <button onclick="applyJob('Business Analyst')">
+                Apply Now
+            </button>
+
+        </div>
+
+
+        <!-- JOB 6 -->
+
+        <div class="job-card">
+
+            <div class="company-row">
+                <div class="company-logo deloitte">Deloitte</div>
+
+                <span>New</span>
+            </div>
+
+            <h3>UI/UX Designer</h3>
+
+            <p class="company">Deloitte</p>
+
+            <p>📍 Chennai, India</p>
+
+            <p>💼 Full-time</p>
+
+            <p>₹ 6 - 12 LPA</p>
+
+            <button onclick="applyJob('UI/UX Designer')">
+                Apply Now
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SUCCESS STORIES ================= -->
+
+<section class="stories">
+
+    <div class="story-text">
+
+        <p class="section-small">
+            SUCCESS STORIES
+        </p>
+
+        <h2>What Our Users Say</h2>
+
+        <p>
+            Real people. Real stories. Real opportunities.
+        </p>
+
+    </div>
+
+
+    <div class="testimonial">
+
+        <div class="quote">“</div>
+
+        <p id="reviewText">
+            Job Connect helped me find my dream job
+            in a top company. The platform is easy to use
+            and the support team is very helpful.
+            I highly recommend it!
+        </p>
+
+        <div class="user">
+
+            <div class="avatar">PS</div>
+
+            <div>
+                <strong id="reviewName">
+                    Priya Sharma
+                </strong>
+
+                <small id="reviewJob">
+                    Software Engineer, TCS
+                </small>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <div class="rocket">
+        🚀
+    </div>
+
+    <div>
+        <h2>Ready to Build Your Future?</h2>
+
+        <p>
+            Join thousands of professionals who found
+            their dream jobs through Job Connect.
+        </p>
+    </div>
+
+    
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+
+        <h2>
+            💼 JOB <span>CONNECT</span>
+        </h2>
+
+        <p>Your Career • Our Priority</p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+
+    </div>
+
+
+    <div class="social">
+        ● &nbsp; ◎ &nbsp; in &nbsp; ♥️
+    </div>
+
+
+    <div class="copyright">
+        © 2026 Job Connect. All rights reserved.
+    </div>
+
+</footer>
+
+
+<script src="js/index.js"></script>
+
+</body>
+</html>

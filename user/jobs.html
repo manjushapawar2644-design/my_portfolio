@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Home | Online Job Portal</title>
+    <link rel="stylesheet" href="../css/jobs.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <h2>JobPortal</h2>
+    <div class="nav-links">
+        <a href="user-home.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="my-applications.html">My Applications</a>
+        <a href="user-profile.html">Profile</a>
+        <a href="../index.html">Logout</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Find Your Dream Job</h1>
+    <p>Discover opportunities and build your career.</p>
+
+    <div class="search-box">
+        <input type="text" id="searchJob"
+               placeholder="Enter job title...">
+        <button onclick="searchJobs()">Search Jobs</button>
+    </div>
+</section>
+
+<section class="jobs-section">
+    <h2>Latest Jobs</h2>
+
+    <div class="job-container" id="jobContainer">
+        <div class="job-card">
+            <h3>Web Developer</h3>
+            <p>Company: Infosys</p>
+            <p>Location: Pune</p>
+            <a href="job-details.html?job=web">View Details</a>
+        </div>
+
+        <div class="job-card">
+            <h3>Java Developer</h3>
+            <p>Company: TCS</p>
+            <p>Location: Mumbai</p>
+            <a href="job-details.html?job=java">View Details</a>
+        </div>
+
+        <div class="job-card">
+            <h3>UI/UX Designer</h3>
+            <p>Company: Wipro</p>
+            <p>Location: Bengaluru</p>
+            <a href="job-details.html?job=design">View Details</a>
+        </div>
+    </div>
+    <p id="message"></p>
+</section>
+
+<footer>
+    <p>© 2026 Online Job Portal</p>
+</footer>
+
+<script src="../js/jobs.js"></script>
+</body>
+</html>

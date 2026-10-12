@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | JobPortal</title>
+    <link rel="stylesheet" href="../css/user-profile.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <h2>JobPortal</h2>
+
+    <div class="nav-links">
+        <a href="user-home.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="my-applications.html">My Applications</a>
+        <a href="profile.html">Profile</a>
+        <a href="../index.html">Logout</a>
+    </div>
+</nav>
+
+<header class="page-header">
+    <h1>My Profile</h1>
+    <p>Manage your personal information and career details.</p>
+</header>
+
+<main class="profile-container">
+
+    <section class="profile-card">
+        <div class="avatar" id="avatar">MP</div>
+
+        <h2 id="displayName">Manjusha pawar</h2>
+        <p class="role">BCS Student | Job Seeker</p>
+
+        <button class="edit-btn" id="editBtn" onclick="toggleEdit()">
+            Edit Profile
+        </button>
+    </section>
+
+    <section class="details-card">
+        <h2>Personal Information</h2>
+
+        <form id="profileForm">
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label for="name">Manjusha Nitin Pawar</label>
+                    <input type="text" id="name"
+                           value="Manjusha Pawar" disabled required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email"
+                           value="manjushapawar2644@gmail.com" disabled required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Mobile Number</label>
+                    <input type="tel" id="phone"
+                           value="8767972272"
+                           pattern="[0-9]{10}" maxlength="10"
+                           disabled required>
+                </div>
+
+                <div class="form-group">
+                    <label for="education">Education</label>
+                    <input type="text" id="education"
+                           value="BCS - Third Year" disabled required>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="skills">Skills</label>
+                    <textarea id="skills" rows="3" disabled
+                        required>HTML, CSS, JavaScript, Core Java, SQL</textarea>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="about">About Me</label>
+                    <textarea id="about" rows="4" disabled
+                        required>Motivated BCS student interested in web development and software projects.</textarea>
+                </div>
+
+            </div>
+
+            <div class="form-actions" id="formActions">
+                <button type="submit" class="save-btn">
+                    Save Changes
+                </button>
+
+                <button type="button" class="cancel-btn"
+                        onclick="cancelEdit()">
+                    Cancel
+                </button>
+            </div>
+        </form>
+
+        <p id="message"></p>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 JobPortal | Online Job Portal</p>
+</footer>
+
+<script src="../js/user-profile.js"></script>
+</body>
+</html>

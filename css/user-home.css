@@ -1,0 +1,150 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f5fb;
+    color: #222;
+}
+
+.navbar {
+    background: #17172f;
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.navbar h2 {
+    color: #a78bfa;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #a78bfa;
+}
+
+.hero {
+    background: linear-gradient(135deg, #5145cd, #8b5cf6);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search-box input {
+    width: 300px;
+    max-width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+}
+
+button {
+    padding: 13px 20px;
+    background: #17172f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.jobs-section {
+    padding: 40px 5%;
+}
+
+.jobs-section h2 {
+    margin-bottom: 25px;
+}
+
+.job-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.job-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+.job-card h3 {
+    color: #5145cd;
+    margin-bottom: 15px;
+}
+
+.job-card p {
+    margin-bottom: 12px;
+}
+
+.job-card a {
+    display: inline-block;
+    margin-top: 10px;
+    background: #5145cd;
+    color: white;
+    padding: 10px 14px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#message {
+    margin-top: 20px;
+}
+
+footer {
+    background: #17172f;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
+
+

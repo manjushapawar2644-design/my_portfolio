@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF"-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Jobs | JobPortal</title>
+    <link rel="stylesheet" href="../css/admin-mange-jobs.css">
+</head>
+<body>
+
+<nav>
+    <h2>JobPortal Admin</h2>
+
+    <div>
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="admin-manage-user.html">Manage-users</a>
+        <a href="admin-manage-jobs.html">Manage-Jobs</a>
+        <a href="admin-application.html">Application</a>
+        <a href="../index.html">Logout</a>
+    </div>
+</nav>
+
+<section class="jobs">
+    <h1>Manage Jobs</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Job Title</th>
+                <th>Company</th>
+                <th>Location</th>
+                <th>Salary</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+<tbody id="jobTable"></tbody>
+    </table>
+</section>
+
+<script src="../js/admin-manage-jobs.js"></script>
+</body>
+</html>
