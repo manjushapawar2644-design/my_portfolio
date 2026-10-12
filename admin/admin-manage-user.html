@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manage Users | JobPortal</title>
+    <link rel="stylesheet" href="../css/admin-mange-user.css">
+</head>
+<body>
+
+<nav>
+    <h2>JobPortal Admin</h2>
+    <div>
+    
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="admin-manage-user.html">Manage-users</a>
+        <a href="admin-manage-jobs.html">Manage-Jobs</a>
+        <a href="admin-application.html">Application</a>
+        <a href="../index.html">Logout</a>
+    </div>
+</nav>
+
+<section class="users">
+    <h1>Manage Users</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="userTable"></tbody>
+    </table>
+</section>
+
+<script src="../js/admin-mange-user.js"></script>
+</body>
+</html>

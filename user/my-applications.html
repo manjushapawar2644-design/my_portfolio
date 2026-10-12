@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Applications | JobConnect</title>
+
+    <link rel="stylesheet" href="../css/my-applications.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Job<span>portal</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="user-home.html">Home</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="my-applications.html">
+                My Applications
+            </a>
+            <a href="user-profile.html">Profile</a>
+            <a href="../index.html">Logout</a>
+            
+        </div>
+
+    </nav>
+
+
+    <!-- ================= PAGE HEADER ================= -->
+
+    <section class="page-header">
+
+        <h1>My Applications</h1>
+
+        <p>
+            Track and manage your job applications in one place.
+        </p>
+
+    </section>
+
+
+    <!-- ================= SUMMARY ================= -->
+
+    <section class="summary-container">
+
+        <div class="summary-card">
+            <div class="summary-icon blue">📄</div>
+
+            <div>
+                <h3 id="totalApplications">0</h3>
+                <p>Total Applications</p>
+            </div>
+        </div>
+
+
+        <div class="summary-card">
+            <div class="summary-icon orange">⏳</div>
+
+            <div>
+                <h3 id="pendingApplications">0</h3>
+                <p>Pending</p>
+            </div>
+        </div>
+
+
+        <div class="summary-card">
+            <div class="summary-icon green">✓</div>
+
+            <div>
+                <h3 id="selectedApplications">0</h3>
+                <p>Selected</p>
+            </div>
+        </div>
+
+
+        <div class="summary-card">
+            <div class="summary-icon red">✕</div>
+
+            <div>
+                <h3 id="rejectedApplications">0</h3>
+                <p>Rejected</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ================= APPLICATIONS ================= -->
+
+    <section class="applications-section">
+
+        <div class="section-header">
+
+            <div>
+                <h2>Application History</h2>
+                <p>Here you can check the status of your applications.</p>
+            </div>
+
+
+            <select id="statusFilter">
+
+                <option value="all">
+                    All Applications
+                </option>
+
+                <option value="Pending">
+                    Pending
+                </option>
+
+                <option value="Shortlisted">
+                    Shortlisted
+                </option>
+
+                <option value="Selected">
+                    Selected
+                </option>
+
+                <option value="Rejected">
+                    Rejected
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- Application Cards -->
+
+        <div id="applicationsContainer">
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="../js/my-applications.js"></script>
+
+</body>
+
+</html>
